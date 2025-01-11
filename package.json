@@ -1,1 +1,15 @@
-
+{
+  "name": "git-helper",
+  "version": "1.0.0",
+  "description": "A CLI tool to automate git commits and rollbacks during development.",
+  "main": "lib/git-helper.js",
+  "bin": {
+    "git-helper": "./bin/cli.js"
+  },
+  "scripts": {
+    "postinstall": "node lib/setup.js"
+  },
+  "author": "Brad Traynham",
+  "license": "MIT",
+  "dependencies": {}
+}
