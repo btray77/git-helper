@@ -110,6 +110,9 @@ git-helper/
 ├── lib/
 │   ├── git-helper.js   # Core logic for the git-helper functions
 │   └── setup.js        # Helper script to auto-update package.json with npm scripts
+├── tests/
+│   ├── git-helper.test.js  # Tests for git-helper functions
+│   └── cli.test.js         # Tests for CLI commands
 ├── package.json        # NPM configuration
 ├── README.md           # Documentation for the tool
 ├── LICENSE             # License file for open-source distribution
