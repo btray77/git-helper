@@ -116,3 +116,51 @@ git-helper/
 └── .gitignore          # Files and folders to ignore in version control
 ```
 ---
+
+### **Tests:**
+
+- Tests ensure the CLI correctly calls the appropriate function (`autoCommit`, `manualCommit`, or `rollback`).
+- Verifies that invalid commands print usage instructions.
+
+---
+
+# **Running the Tests:**
+
+### Run all tests:
+```bash
+npm test
+```
+
+### Run tests in watch mode:
+```bash
+npm run test:watch
+```
+
+### Run tests with coverage report:
+```bash
+npm run test:coverage
+```
+
+---
+
+# **Test Output Example:**
+
+```bash
+PASS tests/git-helper.test.js
+✓ autoCommit should add and commit changes with AUTO prefix
+✓ manualCommit should squash AUTO commits into a single commit
+✓ rollback should perform a soft reset to the last manual commit
+
+PASS tests/cli.test.js
+✓ CLI runs autoCommit when passed "start"
+✓ CLI runs manualCommit when passed "manual"
+✓ CLI runs rollback when passed "rollback"
+✓ CLI prints usage when passed an invalid command
+```
+
+---
+
+This setup ensures your `git-helper` works perfectly with robust tests for both the core functions and CLI commands. Let me know if you'd like any additional test cases!
+
+
+
