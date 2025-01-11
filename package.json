@@ -1,6 +1,6 @@
 {
   "name": "git-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool to automate git commits and rollbacks during development.",
   "main": "lib/git-helper.js",
   "bin": {
