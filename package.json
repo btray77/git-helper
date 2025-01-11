@@ -11,5 +11,8 @@
   },
   "author": "Brad Traynham",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
 }
